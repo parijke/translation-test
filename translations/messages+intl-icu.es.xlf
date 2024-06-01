@@ -15,19 +15,19 @@
       </trans-unit>
       <trans-unit id="yiNDGMU" resname="Hello, {name}">
         <source>Hello, {name}</source>
-        <target>__Hello, {name}</target>
+        <target>Hola, {name}</target>
       </trans-unit>
       <trans-unit id="aTsmYz2" resname="Hello, %name%">
         <source>Hello, %name%</source>
-        <target>__Hello, %name%</target>
+        <target>Hola, %name%</target>
       </trans-unit>
       <trans-unit id="Ji89q6Q" resname="Var 1 = %variabele1%">
         <source>Var 1 = %variabele1%</source>
-        <target>__Var 1 = %variabele1%</target>
+        <target>Var uno 1 = %variabele1%</target>
       </trans-unit>
       <trans-unit id="S6SFKQw" resname="Var 2 = {variabele2}">
         <source>Var 2 = {variabele2}</source>
-        <target>__Var 2 = {variabele2}</target>
+        <target>Var dos = {variabele2}</target>
       </trans-unit>
     </body>
   </file>

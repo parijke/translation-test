@@ -29,6 +29,14 @@
         <source>Var 2 = {variabele2}</source>
         <target>Var dos = {variabele2}</target>
       </trans-unit>
+      <trans-unit id="SzX5ua9" resname="Hello %name%">
+        <source>Hello %name%</source>
+        <target>Hola %name%</target>
+      </trans-unit>
+      <trans-unit id="gzWDxXQ" resname="Hello {name}">
+        <source>Hello {name}</source>
+        <target>Hola {name}</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

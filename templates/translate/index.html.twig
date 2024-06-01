@@ -23,5 +23,12 @@
     <br>
     {% trans %} Var 2 = {variabele2}{% endtrans %}
 
+    <p>
+        {% trans with {'name': 'World'}  %}Hello %name%{% endtrans %}
+    </p>
+
+    <p>
+        {% trans with {'name': 'World'}  %}Hello {name}{% endtrans %}
+    </p>
 </div>
 {% endblock %}

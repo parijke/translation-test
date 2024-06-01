@@ -21,11 +21,11 @@
       </trans-unit>
       <trans-unit id="yiNDGMU" resname="Hello, {name}">
         <source>Hello, {name}</source>
-        <target>__Hello, {name}</target>
+        <target>Hello, {name}</target>
       </trans-unit>
       <trans-unit id="aTsmYz2" resname="Hello, %name%">
         <source>Hello, %name%</source>
-        <target>__Hello, %name%</target>
+        <target>Hello, %name%</target>
       </trans-unit>
       <trans-unit id="Ji89q6Q" resname="Var 1 = %variabele1%">
         <source>Var 1 = %variabele1%</source>

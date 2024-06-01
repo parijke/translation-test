@@ -7,7 +7,7 @@
     <body>
       <trans-unit id="UvqOZHu" resname="message.test.1">
         <source>message.test.1</source>
-        <target>English message</target>
+        <target>English message (no ICU)</target>
       </trans-unit>
       <trans-unit id="6Og5lKg" resname="Dit is een test van de vertalingen. met %variabele1% en {variabele2}">
         <source>Dit is een test van de vertalingen. met %variabele1% en {variabele2}</source>

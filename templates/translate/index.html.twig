@@ -19,10 +19,6 @@
     <p>{{ 'Hello, {name}' |trans({'%name%': name }) }}</p>
     <p>{{ 'Hello, %name%' |trans({'%name%': 'Fabien'}) }}</p>
 
-    {% trans %} Var 1 = %variabele1%{% endtrans %}
-    <br>
-    {% trans %} Var 2 = {variabele2}{% endtrans %}
-
     <p>
         {% trans with {'name': 'World'}  %}Hello %name%{% endtrans %}
     </p>

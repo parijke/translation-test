@@ -15,16 +15,17 @@
     {% set variabele2 = 'var2' %}
     {% set name = 'Jan' %}
 
-    <p>{{ 'Hello, {name}' |trans({'%name%': 'Fabien'}) }}</p>
-    <p>{{ 'Hello, {name}' |trans({'%name%': name }) }}</p>
-    <p>{{ 'Hello, %name%' |trans({'%name%': 'Fabien'}) }}</p>
+    <p>{{ 'Hello, {name}' |trans({'%name%': 'Fabien'}) }} {{ "<p>{{ 'Hello, {name}' |trans({'%name%': 'Fabien'}) }}</p>"|raw}}</p>
+    <p>{{ 'Hello, {name}' |trans({'%name%': name }) }}</p> {{ "<p>{{ 'Hello, {name}' |trans({'%name%': name }) }}</p>" |raw}}
+    <p>{{ 'Hello, %name%' |trans({'%name%': 'Fabien'}) }}</p> {{ "<p>{{ 'Hello, %name%' |trans({'%name%': 'Fabien'}) }}</p>"|raw }}
 
-    <p>
-        {% trans with {'name': 'World'}  %}Hello %name%{% endtrans %}
-    </p>
+    <hr>
 
-    <p>
-        {% trans with {'name': 'World'}  %}Hello {name}{% endtrans %}
-    </p>
+    {{ "{% trans with {'name': 'World'}  %}Hello %name%{% endtrans %}"|raw }}
+    <p>{% trans with {'name': 'World'}  %}Hello %name%{% endtrans %}</p>
+
+    {{ "{% trans with {'name': 'World'}  %}Hello {name}{% endtrans %}"|raw }}
+    <p>{% trans with {'name': 'World'}  %}Hello {name}{% endtrans %}</p>
+
 </div>
 {% endblock %}

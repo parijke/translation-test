@@ -11,10 +11,17 @@
 <div class="example-wrapper">
     <h1>{{ 'message.test.1'|trans }}</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/home/paul/www/icu-translate/src/Controller/TranslateController.php</code></li>
-        <li>Your template at <code>/home/paul/www/icu-translate/templates/translate/index.html.twig</code></li>
-    </ul>
+    {% set variabele1 = 'var1' %}
+    {% set variabele2 = 'var2' %}
+    {% set name = 'Jan' %}
+
+    <p>{{ 'Hello, {name}' |trans({'%name%': 'Fabien'}) }}</p>
+    <p>{{ 'Hello, {name}' |trans({'%name%': name }) }}</p>
+    <p>{{ 'Hello, %name%' |trans({'%name%': 'Fabien'}) }}</p>
+
+    {% trans %} Var 1 = %variabele1%{% endtrans %}
+    <br>
+    {% trans %} Var 2 = {variabele2}{% endtrans %}
+
 </div>
 {% endblock %}
